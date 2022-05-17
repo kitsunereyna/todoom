@@ -1,0 +1,133 @@
+
+
+.userTime {
+  flex-wrap: wrap;
+  float: right;
+  font-size: 13px;
+  margin-top: -19px;
+  margin-right: 60px;
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.459);
+}
+
+.panel {
+  max-height: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+  margin: 30px 50px;
+  padding: 70px 120px;
+  box-shadow: 0px 0px 50px rgba(26, 54, 12, 0.2);
+  border-radius: 30px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  gap: 50px;
+  background-color: #cbffb9;
+}
+
+#zodiacName {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+}
+.zodiacInfo {
+  width: 569px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.vl {
+  border-left: 3px solid rgba(0, 0, 0, 0.1);
+  height: 450px;
+}
+
+.smallInfo {
+  display: flex;
+  gap: 40px;
+}
+
+.char {
+  display: flex;
+  gap: 5px;
+}
+
+.charTitle {
+  font-weight: 700;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.hello {
+  width: 100%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #66855bcc;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #256106;
+  margin-top: -50px;
+}
+
+.hint {
+  width: 247px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #85957d;
+  margin-top: -80px;
+}
+
+input {
+  background-color: #ebf4ee;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+  width: 324px;
+}
+
+.btn {
+  border-color: rgba(72, 175, 18, 1);
+  color: rgba(72, 175, 18, 1);
+  box-shadow: none;
+  width: 122px;
+  height: 39px;
+  border-radius: 30px;
+  background-color: #fff;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-left: 130px;
+}
+
+.btn:hover {
+  background-color: rgba(72, 175, 18, 1);
+  color: #fff;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/todo.css">
+    <link rel="stylesheet" href="/css/navbar.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=K2D:wght@600;700&family=Montserrat:wght@500;700;800&display=swap');    
+    </style>
+    <title>Todoo</title>
+</head>
+<body>
+    <%- include("partials/navbar.ejs") %>
+
+
+    <div class="panel">
+        <div class="planTypes">
+            <div class="plans">
+                <li><a href="">Daily plan</a></li>
+                <li><a href="">Weekly plan</a></li>
+                <li><a href="">Monthly plan</a></li>
+            </div>
+            <div class="button">
+                <button class="btn create" type="submit" onclick="location.href='/newTodo'">Create new</button>
+            </div>
+        </div>       
+           
+        <div class="vl"></div>
+        <div class="listPanel">
+            <p class="title">My Todo list</p>
+            <div class="todoPanel">
+                <div class="todoBox">
+                    <p class="todoName bold">Grocery shopping</p>
+                    <p class="todoTime">Due: 08 April</p>
+                    <button class="btn" type="submit">Mark as done</button>
+                </div>
+
+                <div class="todoBox">
+                    <p class="todoName bold">Grocery shopping</p>
+                    <p class="todoTime">Due: 08 April</p>
+                    <button class="btn" type="submit">Mark as done</button>
+                </div>
+
+                <div class="todoBox">
+                    <p class="todoName bold">Grocery shopping</p>
+                    <p class="todoTime">Due: 08 April</p>
+                    <button class="btn" type="submit">Mark as done</button>
+                </div>
+
+                <div class="todoBox">
+                    <p class="todoName bold">Grocery shopping</p>
+                    <p class="todoTime">Due: 08 April</p>
+                    <button class="btn" type="submit">Mark as done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

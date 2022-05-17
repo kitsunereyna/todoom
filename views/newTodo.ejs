@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=K2D:wght@600;700&family=Montserrat:wght@500;700;800&display=swap');    
+    </style>
+    <link rel="stylesheet" href="/css/newTodo.css">
+    <link rel="stylesheet" href="/css/navbar.css" />
+
+    <title>New Todo</title>
+</head>
+<body>
+    <%- include("partials/navbar.ejs") %>
+
+
+    <div class="panel">
+        <p class="title">My new Todo</p>
+        <div class="form">
+            <form action="/" method="POST">
+                <input type="text" id="taskInput" name="task" placeholder="Write task"><br>
+                <input type="text" id="deadlineInput" name="deadline" placeholder="Deadline"><br>
+                <input type="text" id="PlanInput" name="plan" placeholder="Plan"><br>
+                <button class="btn" type="submit">Create new</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

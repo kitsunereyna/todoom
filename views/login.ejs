@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=K2D:wght@600;700&family=Montserrat:wght@500;700;800&display=swap');    </style>
+    </style>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a id="main" href="/zodiac">Todoom</a></li>
+        </ul>
+    </nav>
+
+    <div class="login">
+        <div class="welcome">
+            <p class="title"> Welcome back </p>
+            <p class="hint"> Sign in to your account </p>
+            
+            <form action="/login/auth" method="POST"> 
+                <input type="text" id="emailInput" name="email" placeholder="Email"><br>
+                <input type="password" id="passwordInput" name="password" placeholder="Password"><br>
+                <button class="btn" id="signIn"> Sign in </button>
+            </form>
+        </div>
+
+        <div class="newHere">
+            <p class="titleNew">New here?</p>
+            <p class="hint signup-hint">Sign up and discover a great amount of new opportunities!</p>
+            <button class="btn" id="signUp" onclick="location.href='/register'"> Sign up </button>
+        </div>
+    </div>
+</body>
+</html>

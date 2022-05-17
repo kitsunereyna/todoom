@@ -1,0 +1,152 @@
+.panel{
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 50px;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 50px rgba(26, 54, 12, 0.2);
+    border-radius: 30px;
+}
+
+
+.sortTypes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 20%;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    margin-left: 30px;
+    margin-top: 100px;
+
+}
+
+.sort{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+
+
+.vl {
+    border-left: 3px solid rgba(0, 0, 0, 0.1);
+    height:500px;
+  }
+
+
+.listPanel{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    position: static;
+}
+
+.userList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.userList-name{
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
+
+.userBox{
+    padding: 15px 30px;
+    background-color: #CBFFB9;
+    border-radius: 30px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 140%;
+}
+
+.userInfo{
+    font-family: 'Montserrat';
+    width: 400px;
+}
+
+.info{
+    margin-top: -20px;
+}
+
+
+.bold{
+    font-weight: 700;
+}
+
+
+.title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #256106;
+}
+
+.adminBtns{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn{
+    border-color: rgba(72, 175, 18, 1);
+    color: rgba(72, 175, 18, 1);
+    box-shadow: none;
+    width: 122px;
+    height: 39px;
+    border-radius: 30px;
+    background-color: #CBFFB9;
+    font-size: 15px;
+}
+
+.sortBtn{
+    /* border-color: rgba(72, 175, 18, 1); */
+    border-style: none;
+    color: rgba(72, 175, 18, 1);
+    box-shadow: none;
+    width: 200px;
+    height: 39px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+
+.admin{
+    height: 30px;
+    margin-top: 20px;
+    
+}
+
+.create{
+    background-color: #fff;
+    margin-left: 18%;
+}
+
+.btn:hover{
+    background-color: rgba(72, 175, 18, 1);
+    color: #fff;
+}
+
+.sortBtn:hover{
+    
+    background-color: rgba(72, 175, 18, 1);
+    color: #fff;
+}

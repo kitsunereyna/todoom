@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=K2D:wght@600;700&family=Montserrat:wght@500;700;800&display=swap');    </style>
+    </style>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/navbar.css" />
+
+</head>
+<body>
+    <%- include("partials/navbar.ejs") %>
+
+    <div class="panel">
+        <div class="listPanel">
+            <p class="title">List of users</p>
+            <div class="userList"> 
+               
+            </div>           
+        </div>
+  
+
+        <div class="vl"></div>
+
+        <div class="sortTypes">
+            <div class="sort">
+                <li><button id="sortName" class="bold sortBtn">Sort by name</button></li>
+                <li><button id="sortCity" class="bold sortBtn">Sort by city</button></li>
+            </div>
+            <div class="button">
+                <button class="btn create" type="submit" onclick="location.href='/admin/newUser'">Create new</button>
+            </div>
+        </div>     
+
+         <script src="/js/admin.js"></script>
+         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </div>
+</body>
+</html>

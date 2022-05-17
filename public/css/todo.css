@@ -1,0 +1,97 @@
+.panel{
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 50px;
+    padding: 30px 120px;
+    box-shadow: 0px 0px 50px rgba(26, 54, 12, 0.2);
+    border-radius: 30px;
+}
+
+
+.planTypes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 20%;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    margin-left: -50px;
+    margin-top: 100px;
+
+}
+
+.plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+
+
+.vl {
+    border-left: 3px solid rgba(0, 0, 0, 0.1);
+    height: 500px;
+  }
+
+
+.listPanel{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.todoPanel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.todoBox{
+    padding: 35px 35px;
+    background-color: #CBFFB9;
+    border-radius: 30px;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    margin: 20px 20px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+.title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #256106;
+}
+
+.btn{
+    border-color: rgba(72, 175, 18, 1);
+    color: rgba(72, 175, 18, 1);
+    box-shadow: none;
+    width: 122px;
+    height: 39px;
+    border-radius: 30px;
+    background-color: #CBFFB9;
+    font-size: 15px;
+}
+
+.create{
+    background-color: #fff;
+
+}
+
+.btn:hover{
+    background-color: rgba(72, 175, 18, 1);
+    color: #fff;
+}

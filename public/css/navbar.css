@@ -1,0 +1,41 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .navbar {
+    padding: 0 60px;
+    padding-top: 20px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  #main {
+    font-family: "K2D";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  li a:hover {
+    color: rgba(37, 97, 6, 1);
+  }

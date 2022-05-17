@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zodiac</title>
+    <link rel="stylesheet" href="/css/zodiac.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=K2D:wght@600;700&family=Montserrat:wght@500;700;800&display=swap");
+    </style>
+  </head>
+  <body>
+    <%- include("partials/navbar.ejs") %>
+
+    <div class="panel">
+      <div class="zodiacInfo">
+        <div class="tag">
+          <p id="zodiacName">Zodiac sign</p>
+          <p id="date">Date range</p>
+          <p id="mood">Mood</p>
+        </div>
+        <p id="desc">
+          Here you will see your astrological description and horoscope for the
+          day.
+        </p>
+        <div class="smallInfo">
+          <div>
+            <div class="color char">
+              <p class="colorTitle charTitle">Color:</p>
+              <p class="colorBody"></p>
+            </div>
+
+            <div class="time char">
+              <p class="timeTitle charTitle">Lucky time:</p>
+              <p class="timeBody"></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="lucky char">
+              <p class="luckyTitle charTitle">Lucky numbers:</p>
+              <p class="luckyBody"></p>
+            </div>
+            <div class="compatibility char">
+              <p class="compTitle charTitle">Compatibility:</p>
+              <p class="compBody"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vl"></div>
+      <div class="userInfo">
+        <p class="hello"><%= greeting %></p>
+        <p class="title">Zodiac Signs</p>
+        <p class="hint">Enter your zodiac sign to see your characteristics</p>
+
+        <div>
+          <input
+            type="text"
+            id="signInput"
+            name="zodiacSign"
+            placeholder="Write here"
+          /><br />
+          <button class="btn" id="signFind">Find</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="userTime"><%= sessionPeriod %></p>
+
+    <script src="/js/zodiac.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>

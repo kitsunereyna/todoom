@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=K2D:wght@600;700&family=Montserrat:wght@500;700;800&display=swap');    
+    </style>
+    <link rel="stylesheet" href="/css/newUser.css">
+    <link rel="stylesheet" href="/css/navbar.css" />
+
+    <title>New User</title>
+</head>
+<body>
+    <%- include("partials/navbar.ejs") %>
+
+
+    <div class="panel">
+        <p class="title">Add new User</p>
+        <div class="form">
+            <form action="/admin/create/user" method="POST">
+                <input type="text" id="emailInput" name="email" placeholder="Write email"><br>
+                <input type="text" id="nameInput" name="name" placeholder="Write name"><br>
+                <input type="text" id="cityInput" name="city" placeholder="Write city"><br>
+                <input type="text" id="passwordInput" name="password" placeholder="Create password"><br>
+                <button class="btn" type="submit">Create new</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
